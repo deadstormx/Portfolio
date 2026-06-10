@@ -11,18 +11,18 @@ const skills = [
 ];
 
 const techStack = [
-  { icon: "🐍", name: "Python", category: "Backend" },
-  { icon: "🌐", name: "HTML", category: "Frontend" },
-  { icon: "🎨", name: "CSS", category: "Styling" },
-  { icon: "⚡", name: "JavaScript", category: "Frontend" },
-  { icon: "⚛️", name: "React", category: "Framework" },
-  { icon: "📦", name: "Node.js", category: "Backend" },
-  { icon: "🍃", name: "MongoDB", category: "Database" },
-  { icon: "🔥", name: "Firebase", category: "Backend" },
-  { icon: "💨", name: "Tailwind", category: "Styling" },
-  { icon: "🎯", name: "Figma", category: "Design" },
-  { icon: "🐙", name: "GitHub", category: "Tools" },
-  { icon: "📱", name: "Next.js", category: "Framework" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", name: "Python", category: "Backend" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", name: "HTML", category: "Frontend" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", name: "CSS", category: "Styling" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", name: "JavaScript", category: "Frontend" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", name: "React", category: "Framework" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", name: "Node.js", category: "Backend" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", name: "MongoDB", category: "Database" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", name: "Firebase", category: "Backend" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", name: "Tailwind", category: "Styling" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", name: "Figma", category: "Design" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", name: "GitHub", category: "Tools" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", name: "Next.js", category: "Framework" },
 ];
 
 const highlights = [
@@ -194,9 +194,13 @@ export function AboutSection() {
                 whileHover={{ scale: 1.1, y: -5 }}
                 className="bg-card/40 backdrop-blur-xl border border-border rounded-xl p-6 text-center hover:border-primary/30 transition-all cursor-pointer group"
               >
-                <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
-                  {tech.icon}
-                </div>
+                <div className="w-12 h-12 mb-3 mx-auto group-hover:scale-110 transition-transform">
+  <img
+    src={tech.icon}
+    alt={tech.name}
+    className="w-full h-full object-contain"
+  />
+</div>
                 <div className="text-sm font-medium mb-1">{tech.name}</div>
                 <div className="text-xs text-muted-foreground">
                   {tech.category}
