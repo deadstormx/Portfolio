@@ -13,7 +13,6 @@
   --accent:#c0392b;
   --rule:#d0cdc8;
   --muted:#6b6b6b;
-  --tag-bg:#f0ede8;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{font-size:15px}
@@ -25,7 +24,6 @@ body{
   padding:0;
 }
 
-/* ── PRINT BUTTON ── */
 .print-btn{
   position:fixed;top:20px;right:20px;
   background:var(--accent);color:#fff;
@@ -37,155 +35,123 @@ body{
 }
 .print-btn:hover{opacity:.85}
 
-/* ── PAGE ── */
 .page{
-  max-width:800px;
+  max-width:780px;
   margin:40px auto;
   background:#fff;
   box-shadow:0 2px 40px rgba(0,0,0,.08);
-  padding:52px 56px 60px;
+  padding:48px 52px 56px;
   animation:fadeUp .6s ease both;
 }
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 
-/* ── NAME BLOCK ── */
-.name-block{text-align:center;margin-bottom:22px}
+/* NAME */
+.name-block{text-align:center;margin-bottom:20px}
 .name{
   font-family:'Playfair Display',serif;
-  font-size:2.2rem;font-weight:900;
-  letter-spacing:.01em;
-  line-height:1.1;
-  color:var(--ink);
+  font-size:2rem;font-weight:900;
+  letter-spacing:.01em;line-height:1.1;color:var(--ink);
 }
 .title{
-  font-family:'DM Sans',sans-serif;
-  font-size:.95rem;font-weight:500;
+  font-size:.9rem;font-weight:500;
   color:var(--accent);
-  letter-spacing:.12em;text-transform:uppercase;
-  margin-top:6px;
+  letter-spacing:.12em;text-transform:uppercase;margin-top:5px;
 }
 .contact-line{
-  margin-top:10px;
-  font-size:.82rem;color:var(--muted);
-  display:flex;flex-wrap:wrap;gap:6px 16px;
+  margin-top:8px;font-size:.8rem;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:5px 14px;
   justify-content:center;align-items:center;
 }
 .contact-line a{color:var(--accent);text-decoration:none;font-weight:500}
 .contact-line a:hover{text-decoration:underline}
 .sep{color:var(--rule)}
 
-/* ── RULE ── */
-.rule{
-  border:none;border-top:1.5px solid var(--ink);
-  margin:20px 0 0;
-}
-.rule-light{
-  border:none;border-top:.5px solid var(--rule);
-  margin:14px 0;
-}
+.rule{border:none;border-top:1.5px solid var(--ink);margin:18px 0 0;}
+.rule-light{border:none;border-top:.5px solid var(--rule);margin:12px 0;}
 
-/* ── SECTIONS ── */
-.section{margin-top:26px}
+.section{margin-top:22px}
 .section-label{
   font-family:'DM Mono',monospace;
-  font-size:.72rem;font-weight:500;
+  font-size:.7rem;font-weight:500;
   letter-spacing:.14em;text-transform:uppercase;
-  color:var(--accent);
-  margin-bottom:10px;
+  color:var(--accent);margin-bottom:8px;
 }
 
-/* ── SUMMARY ── */
-.summary p{
-  font-size:.9rem;line-height:1.75;
-  color:#333;
-}
+.summary p{font-size:.87rem;line-height:1.75;color:#333;}
 
-/* ── SKILLS ── */
 .skills-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:8px 24px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px 32px;
 }
 .skill-row{
-  display:flex;align-items:baseline;gap:8px;
-  font-size:.87rem;
+  display:flex;
+  align-items:baseline;
+  gap:6px;
+  font-size:.84rem;
+  line-height:1.5;
 }
 .skill-cat{
   font-weight:600;color:var(--ink);
-  white-space:nowrap;font-size:.83rem;
-  min-width:90px;
+  white-space:nowrap;font-size:.81rem;
+  flex-shrink:0;
 }
 .skill-cat::after{content:":"}
-.skill-val{color:#444;line-height:1.5}
+.skill-val{color:#444;}
 
-/* ── PROJECTS ── */
-.project{margin-bottom:22px}
+.project{margin-bottom:18px;}
 .project:last-child{margin-bottom:0}
 .project-header{
   display:flex;justify-content:space-between;
-  align-items:baseline;gap:12px;
-  margin-bottom:6px;
+  align-items:baseline;gap:12px;margin-bottom:5px;
 }
 .project-name{
   font-family:'Playfair Display',serif;
-  font-size:1.05rem;font-weight:700;
-  color:var(--ink);
+  font-size:1rem;font-weight:700;color:var(--ink);
 }
 .project-tech{
   font-family:'DM Mono',monospace;
-  font-size:.72rem;color:var(--accent);
-  white-space:nowrap;
+  font-size:.7rem;color:var(--accent);
+  white-space:nowrap;flex-shrink:0;
 }
-.project ul{
-  padding-left:16px;
-  list-style:none;
-}
+.project ul{padding-left:0;list-style:none;}
 .project ul li{
-  font-size:.87rem;line-height:1.7;
-  color:#333;position:relative;
-  padding-left:12px;
+  font-size:.85rem;line-height:1.7;color:#333;
+  position:relative;padding-left:14px;
 }
 .project ul li::before{
-  content:"—";
-  position:absolute;left:0;
+  content:"—";position:absolute;left:0;
   color:var(--rule);font-weight:300;
 }
 
-/* ── EDUCATION ── */
-.edu-row{
-  display:flex;justify-content:space-between;
-  align-items:baseline;gap:12px;
-}
-.edu-degree{
-  font-family:'Playfair Display',serif;
-  font-size:1rem;font-weight:700;
-}
-.edu-period{
-  font-family:'DM Mono',monospace;
-  font-size:.75rem;color:var(--muted);
-  white-space:nowrap;
-}
-.edu-school{
-  font-size:.87rem;color:var(--muted);
-  margin-top:3px;
-}
-.edu-block{margin-bottom:14px;}
+.edu-block{margin-bottom:12px;}
 .edu-block:last-child{margin-bottom:0;}
+.edu-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;}
+.edu-degree{font-family:'Playfair Display',serif;font-size:.97rem;font-weight:700;}
+.edu-period{font-family:'DM Mono',monospace;font-size:.73rem;color:var(--muted);white-space:nowrap;}
+.edu-school{font-size:.84rem;color:var(--muted);margin-top:2px;}
 
-/* ── EXTRA ── */
-.extra p{
-  font-size:.87rem;line-height:1.7;color:#333;
-}
+.extra p{font-size:.85rem;line-height:1.75;color:#333;}
 
-/* ── PRINT ── */
 @media print{
   body{background:#fff}
-  .page{box-shadow:none;margin:0;padding:40px 48px}
+  .page{box-shadow:none;margin:0;padding:36px 44px}
   .print-btn{display:none}
-  @page{margin:0}
+  /* Remove date, time, URL header and footer when printing */
+  @page{
+    margin:10mm;
+    /* Hides date/time and URL in most browsers */
+  }
+  /* Chrome/Edge fix to hide header/footer */
+  html{
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+  .project{page-break-inside:avoid;break-inside:avoid;}
+  .edu-block{page-break-inside:avoid;break-inside:avoid;}
 }
-
 @media(max-width:640px){
-  .page{padding:32px 24px;margin:0}
+  .page{padding:28px 20px;margin:0}
   .skills-grid{grid-template-columns:1fr}
   .project-header{flex-direction:column;gap:2px}
 }
@@ -193,7 +159,10 @@ body{
 </head>
 <body>
 
-<button class="print-btn" onclick="window.print()">⬇ Download PDF</button>
+<button class="print-btn" onclick="
+  // Open print dialog with headers/footers hidden
+  window.print();
+">⬇ Download PDF</button>
 
 <div class="page">
 
@@ -207,6 +176,8 @@ body{
       <span>+977 9761764781</span>
       <span class="sep">|</span>
       <a href="mailto:bibekshrestha378@gmail.com">bibekshrestha378@gmail.com</a>
+      <span class="sep">|</span>
+      <a href="https://www.bibekshrestha1.com.np" target="_blank">Portfolio</a>
       <span class="sep">|</span>
       <a href="https://github.com/deadstormx" target="_blank">GitHub</a>
       <span class="sep">|</span>
@@ -236,20 +207,20 @@ body{
         <span class="skill-val">React, TypeScript, Tailwind CSS, HTML, CSS</span>
       </div>
       <div class="skill-row">
+        <span class="skill-cat">Auth &amp; Security</span>
+        <span class="skill-val">JWT, bcrypt, OAuth 2.0, OTP flows</span>
+      </div>
+      <div class="skill-row">
         <span class="skill-cat">Backend</span>
         <span class="skill-val">Node.js, Express.js, Python, REST APIs</span>
       </div>
       <div class="skill-row">
+        <span class="skill-cat">Cloud &amp; Tools</span>
+        <span class="skill-val">Cloudinary, Render, Vercel, Git, GitHub</span>
+      </div>
+      <div class="skill-row">
         <span class="skill-cat">Database</span>
         <span class="skill-val">MongoDB, Mongoose, SQL basics</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Auth & Security</span>
-        <span class="skill-val">JWT, bcrypt, OAuth 2.0, OTP flows</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Cloud & Tools</span>
-        <span class="skill-val">Cloudinary, Render, Vercel, Git, GitHub</span>
       </div>
       <div class="skill-row">
         <span class="skill-cat">Integrations</span>
@@ -322,11 +293,10 @@ body{
       </div>
       <div class="edu-school">DAV College &nbsp;·&nbsp; Physics, Mathematics &amp; Computer Science</div>
     </div>
-
   </div>
   <hr class="rule-light"/>
 
-  <!-- EXTRA -->
+  <!-- KEY STRENGTHS -->
   <div class="section extra">
     <div class="section-label">Key Strengths</div>
     <p>
@@ -337,5 +307,15 @@ body{
   </div>
 
 </div>
+
+<script>
+// Auto-hide print headers in Chrome by injecting print styles
+const style = document.createElement('style');
+style.textContent = `
+  @page { margin: 10mm; }
+`;
+document.head.appendChild(style);
+</script>
+
 </body>
 </html>
