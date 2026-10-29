@@ -8,7 +8,7 @@ const professionalWork = [
     badge: "Freelance · Client Project",
     description:
       "A wholesale footwear platform for retailers, with a full product catalog, category and subcategory filters, size and color stock tracking, and an inquiry system with a public tracking page. The admin panel manages products, hero slides, offer banners, festival promotions and low-stock email alerts.",
-    image: "./Navyata.png",
+    image: "./Navyataaa.png",
     tech: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Cloudinary"],
     gradient: "from-primary to-accent",
     demo: "https://navyata-style.vercel.app/", 
@@ -18,7 +18,7 @@ const professionalWork = [
     badge: "Company Project · 21st Tech Private Limited",
     description:
       "A text-to-speech platform that turns text into natural AI voices, with speed control and audio downloads. Includes Google and email sign-in, a credit system and an admin panel. Built together with a teammate.",
-    image: "./VoxPega.png",
+    image: "./Voxa.png",
     tech: ["Next.js", "React", "TypeScript", "Node.js", "Vercel"], // replace with your real stack
     gradient: "from-secondary to-purple-600",
     demo: "https://text-to-speech-iaos.vercel.app/",
