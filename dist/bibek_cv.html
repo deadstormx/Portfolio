@@ -155,6 +155,7 @@ body{
   .skills-grid{grid-template-columns:1fr}
   .project-header{flex-direction:column;gap:2px}
 }
+.contact-line{font-size:.74rem;gap:4px 9px;flex-wrap:nowrap;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -191,10 +192,27 @@ body{
     <div class="section-label">Summary</div>
     <p>
       Full Stack Developer with hands-on experience building production-ready web applications
-      using the MERN stack. Proven ability to deliver complete systems — from database design
+      using the MERN stack, including freelance client work and company projects. Proven ability to deliver complete systems — from database design
       and REST APIs to responsive React UIs and cloud deployment. Passionate about clean code,
       real-world integrations, and solving problems that matter.
     </p>
+  </div>
+  <hr class="rule-light"/>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-label">Experience</div>
+
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name" style="font-size:.9rem">Social Media Handler, Video Editor &amp; Developer — 21st Tech Private Limited</div>
+        <div class="edu-period">Jun 2026 — Oct 2026</div>
+      </div>
+      <ul>
+        <li>Managed the company's social media presence and edited videos for its content, alongside development work.</li>
+        <li>Built VoxPega, an AI text-to-speech platform, together with a teammate — authentication, credit system and admin panel.</li>
+      </ul>
+    </div>
   </div>
   <hr class="rule-light"/>
 
@@ -224,7 +242,7 @@ body{
       </div>
       <div class="skill-row">
         <span class="skill-cat">Integrations</span>
-        <span class="skill-val">Khalti, Esewa, IMEPay, Socket.io, Groq AI</span>
+        <span class="skill-val">Khalti, Esewa, IMEPay, Socket.io, Groq AI, Brevo</span>
       </div>
     </div>
   </div>
@@ -233,6 +251,33 @@ body{
   <!-- PROJECTS -->
   <div class="section">
     <div class="section-label">Projects</div>
+
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">Navyata Style — B2B Wholesale Platform (Freelance)</div>
+        <div class="project-tech">MERN · TypeScript · Cloudinary · Brevo</div>
+      </div>
+      <ul>
+        <li>Built and maintain a wholesale footwear platform for a client — product catalog with category filters, size × color stock tracking, and an inquiry system with a public tracking page.</li>
+        <li>Admin panel for products, hero slides, offer banners and festival promotions, plus low-stock and weekly summary emails via Brevo and cron jobs.</li>
+        <li>Hardened security (Helmet, rate limiting, input sanitization, OTP-verified admin changes). Deployed on Vercel + Render + MongoDB Atlas.</li>
+      </ul>
+    </div>
+
+    <hr class="rule-light"/>
+
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">VoxPega — AI Speech Studio (Freelance)</div>
+        <div class="project-tech">Next.js · React · Node.js · Python</div>
+      </div>
+      <ul>
+        <li>Text-to-speech platform with natural AI voices, speed control and downloadable audio, built with a teammate for 21st Tech Private Limited.</li>
+        <li>Google and email authentication, a user credit system and a separate admin panel.</li>
+      </ul>
+    </div>
+
+    <hr class="rule-light"/>
 
     <div class="project">
       <div class="project-header">
@@ -281,7 +326,7 @@ body{
     <div class="edu-block">
       <div class="edu-row">
         <div class="edu-degree">B.Sc. (Hons) Computer Science</div>
-        <div class="edu-period">2023 — Present</div>
+        <div class="edu-period">2023 — 2026</div>
       </div>
       <div class="edu-school">Herald College Kathmandu &nbsp;·&nbsp; Affiliated to University of Wolverhampton, UK</div>
     </div>
